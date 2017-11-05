@@ -1,0 +1,116 @@
+$balanced: #64A3ED;
+$energized: #00C82F;
+$SIDEMENU_TOP: #387EF5;
+$SIDEMENU_BOTTOM: #64A3ED;
+$SIDEMENU_TRANSPARENCY: rgba(255,255,255,0.4);
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+@import "../www/lib/ionic/scss";
+.center-form {
+	width: 290px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	label {
+		background-color: rgba(255,255,255,0.7);
+		border-color: rgba(255,255,255,0);
+		&.top-input {
+			border-radius: 5px 5px 0px 0px !important;
+		}
+		
+		&.bottom-input {
+			border-radius: 0px 0px 5px 5px !important;
+		}
+		
+	}
+	.button-positive {
+		opacity: 0.9;
+	}
+	
+}
+.top-container {
+	height: calc(100% - 96px);
+	overflow: scroll;
+}
+
+.bottom-form {
+	position: absolute;
+	bottom: 0px;
+	display: block;
+	width: 100%;
+	background-color: white;
+	button {
+		margin: 0px !important;
+	}
+	
+}
+.error-box {
+	padding: 10px;
+	border: 1px solid darken($assertive, 10%);
+	background-color: $assertive;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	p {
+		color: white;
+		margin: 0px;
+	}
+	
+}
+.side-menu-item {
+	background: none;
+	color: white;
+	font-weight: 300;
+	border: 0px;
+	.item-content {
+		background: none;
+		&.activated {
+			background: $SIDEMENU_TRANSPARENCY;
+		}
+		
+	}
+	&.active-page-highlight {
+		.item-content {
+			background: $SIDEMENU_TRANSPARENCY;
+		}
+		
+	}
+}
+.side-menu-gradient {
+	background: -webkit-linear-gradient(left top, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+	background: -o-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+	background: -moz-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+	background: linear-gradient(to bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+}
+
+.payit {
+	width: 30%;
+	left: 10%;
+}
+
+.started {
+	width: 200px;
+	background-color: green;
+	position: absolute;
+	left: 20%;
+}
+
+.sel {
+	width: 50%;
+}
+
+.profile-image {
+	img {
+		border-radius: 50%;
+		margin: 10px;
+		border: 4px solid $SIDEMENU_TRANSPARENCY;
+		-webkit-box-shadow: 0px 0px 142px -37px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 142px -37px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 142px -37px rgba(0,0,0,0.75);
+	}
+	
+}
+.card-view {
+	height: 130px;
+	width: 125px;
+}
+

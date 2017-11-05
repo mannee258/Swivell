@@ -1,5 +1,14 @@
 {
   "name": "Swivell",
   "app_id": "",
-  "type": "ionic-angular"
+  "type": "ionic1",
+  "integrations": {
+    "gulp": {}
+  },
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
 }
